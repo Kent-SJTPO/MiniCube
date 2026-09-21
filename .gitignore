@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+env/
+venv/
+
+# Conda
+*.conda
+*.lock
+
+# VS Code
+.vscode/
+
+# CUBE Voyager / Transport Model
+*.tmp
+*.bak
+*.log
+*.lst
+*.prt
+*.rpt
+*.dat
+*.tmp*
+*.~*
+*.cfg
+*.ver
+*.lin
+*.ton
+*.vol
+*.emo
+*.emo.*
+*.speeds
+*.skm     # skims
+*.mat     # matrices (large)
+*.net_out # network outputs
+*.dbo     # cube db
+
+# Model Outputs
+OUTPUTS/*
+!OUTPUTS/.gitkeep
+
+# System / OS
+Thumbs.db
+.DS_Store
