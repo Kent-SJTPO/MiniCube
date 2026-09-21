@@ -1,0 +1,190 @@
+Page 1  (VOYAGER PILOT) Model Run
+SOUTH JERSEY TRANSPORTATION PLANNIN
+-----------------------------------
+PILOT (v.07/10/2023 [6.5.1 x64]) Mon Sep 21 15:18:23 2026
+
+Args: C:\Users\Kschellinger\SJTPO_Git\MiniCube\MiniCube.001 -SC:\Users\Kschellinger\SJTPO_Git\MiniCube -PImpo -PH:58 -PW:80 -IModel Run
+Input:   C:\Users\Kschellinger\SJTPO_Git\MiniCube\MiniCube.001
+
+CATALOG
+*******
+F(017): CATALOG is invalid control type
+
+
+    NAME = Simple4Step
+    DESCRIPTION = "Combined Catalog for Simple 4-Step Model"
+# -------------------------------------------------------------
+# 1. ZONE SYSTEM
+F(017): # is invalid control type
+
+
+# -------------------------------------------------------------
+DATASET ZONES
+F(017): # is invalid control type
+
+
+    TYPE = DBF
+    FILE = zones.dbf
+    DESCRIPTION = "Traffic Analysis Zones"
+ENDDATASET
+**********
+F(017): ENDDATASET is invalid control type
+
+
+# -------------------------------------------------------------
+# 2. HIGHWAY NETWORK
+F(017): # is invalid control type
+
+
+# -------------------------------------------------------------
+DATASET HWYNET
+F(017): # is invalid control type
+
+
+    TYPE = NET
+    FILE = highway.net
+    DESCRIPTION = "Highway Input Network"
+ENDDATASET
+**********
+F(017): ENDDATASET is invalid control type
+
+
+# -------------------------------------------------------------
+# 3. TRANSIT NETWORK (OPTIONAL – delete if not used)
+F(017): # is invalid control type
+
+
+# -------------------------------------------------------------Page 2  (VOYAGER PILOT) Model Run
+SOUTH JERSEY TRANSPORTATION PLANNIN
+-----------------------------------
+DATASET TRNET
+F(017): # is invalid control type
+
+
+    TYPE = PT
+    FILE = transit.pt
+    DESCRIPTION = "Transit Input Network"
+ENDDATASET
+**********
+F(017): ENDDATASET is invalid control type
+
+
+# -------------------------------------------------------------
+# 4. MATRICES FOR 4–STEP MODEL
+F(017): # is invalid control type
+
+
+# -------------------------------------------------------------
+# Trip Generation Output
+F(017): # is invalid control type
+
+
+DATASET TG_MAT
+*******
+F(017): DATASET is invalid control type
+
+
+    TYPE = MAT
+    FILE = tg_output.mat
+    DESCRIPTION = "Trip Generation Matrix"
+ENDDATASET
+**********
+F(017): ENDDATASET is invalid control type
+
+
+# Trip Distribution Output
+F(017): # is invalid control type
+
+
+DATASET DIST_MAT
+*******
+F(017): DATASET is invalid control type
+
+
+    TYPE = MAT
+    FILE = distribution.mat
+    DESCRIPTION = "Trip Distribution Matrix"
+ENDDATASET
+**********
+F(017): ENDDATASET is invalid control type
+
+
+# Mode Choice Output
+F(017): # is invalid control typePage 3  (VOYAGER PILOT) Model Run
+SOUTH JERSEY TRANSPORTATION PLANNIN
+-----------------------------------
+
+
+DATASET MC_MAT
+*******
+F(017): DATASET is invalid control type
+
+
+    TYPE = MAT
+    FILE = modechoice.mat
+    DESCRIPTION = "Mode Choice Matrix"
+ENDDATASET
+**********
+F(017): ENDDATASET is invalid control type
+
+
+# Assignment Demand Matrix
+F(017): # is invalid control type
+
+
+DATASET ASSIGN_MAT
+*******
+F(017): DATASET is invalid control type
+
+
+    TYPE = MAT
+    FILE = assign_demand.mat
+    DESCRIPTION = "Assignment Demand Matrix"
+ENDDATASET
+**********
+F(017): ENDDATASET is invalid control type
+
+
+# -------------------------------------------------------------
+# 5. SKIMS
+F(017): # is invalid control type
+
+
+# -------------------------------------------------------------
+DATASET TIME_SKIM
+F(017): # is invalid control type
+
+
+    TYPE = MAT
+    FILE = skim_time.mat
+    DESCRIPTION = "Travel Time Skims"
+ENDDATASET
+**********
+F(017): ENDDATASET is invalid control type
+
+
+DATASET DIST_SKIM
+*******
+F(017): DATASET is invalid control type
+Page 4  (VOYAGER PILOT) Model Run
+SOUTH JERSEY TRANSPORTATION PLANNIN
+-----------------------------------
+
+    TYPE = MAT
+    FILE = skim_distance.mat
+    DESCRIPTION = "Distance Skims"
+ENDDATASET
+**********
+F(017): ENDDATASET is invalid control type
+
+
+# -------------------------------------------------------------
+ENDCATALOG
+F(017): # is invalid control type
+
+
+
+PILOT Stack Size = 1362 bytes.
+................................................................................
+
+VOYAGER  ReturnCode = 2  Elapsed Time = 00:00:00

@@ -1,68 +1,52 @@
-CATALOG
+# create_catalog.py
+# Generates a combined CUBE Voyager catalog file for a simple 4-step model.
+
+content = """CATALOG
     NAME = Simple4Step
     DESCRIPTION = "Combined Catalog for Simple 4-Step Model"
 
-# -------------------------------------------------------------
-# 1. ZONE SYSTEM
-# -------------------------------------------------------------
 DATASET ZONES
     TYPE = DBF
     FILE = zones.dbf
     DESCRIPTION = "Traffic Analysis Zones"
 ENDDATASET
 
-# -------------------------------------------------------------
-# 2. HIGHWAY NETWORK
-# -------------------------------------------------------------
 DATASET HWYNET
     TYPE = NET
     FILE = highway.net
     DESCRIPTION = "Highway Input Network"
 ENDDATASET
 
-# -------------------------------------------------------------
-# 3. TRANSIT NETWORK (OPTIONAL – delete if not used)
-# -------------------------------------------------------------
 DATASET TRNET
     TYPE = PT
     FILE = transit.pt
     DESCRIPTION = "Transit Input Network"
 ENDDATASET
 
-# -------------------------------------------------------------
-# 4. MATRICES FOR 4–STEP MODEL
-# -------------------------------------------------------------
-# Trip Generation Output
 DATASET TG_MAT
     TYPE = MAT
     FILE = tg_output.mat
     DESCRIPTION = "Trip Generation Matrix"
 ENDDATASET
 
-# Trip Distribution Output
 DATASET DIST_MAT
     TYPE = MAT
     FILE = distribution.mat
     DESCRIPTION = "Trip Distribution Matrix"
 ENDDATASET
 
-# Mode Choice Output
 DATASET MC_MAT
     TYPE = MAT
     FILE = modechoice.mat
     DESCRIPTION = "Mode Choice Matrix"
 ENDDATASET
 
-# Assignment Demand Matrix
 DATASET ASSIGN_MAT
     TYPE = MAT
     FILE = assign_demand.mat
     DESCRIPTION = "Assignment Demand Matrix"
 ENDDATASET
 
-# -------------------------------------------------------------
-# 5. SKIMS
-# -------------------------------------------------------------
 DATASET TIME_SKIM
     TYPE = MAT
     FILE = skim_time.mat
@@ -75,5 +59,10 @@ DATASET DIST_SKIM
     DESCRIPTION = "Distance Skims"
 ENDDATASET
 
-# -------------------------------------------------------------
 ENDCATALOG
+"""
+
+with open("model.cat", "w") as f:
+    f.write(content)
+
+print("model.cat created successfully.")
