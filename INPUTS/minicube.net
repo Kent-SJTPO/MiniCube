@@ -1,0 +1,18 @@
+* MiniCube test network
+* Simple 4-node, 4-link square
+
+NODES
+;NODE   X    Y
+1       0    0
+2       1    0
+3       1    1
+4       0    1
+ENDNODES
+
+LINKS
+;FROM  TO   DIST   LANES  CAP   FFT
+1     2     1.0     1     2000  30
+2     3     1.0     1     2000  30
+3     4     1.0     1     2000  30
+4     1     1.0     1     2000  30
+ENDLINKS
