@@ -1,13 +1,23 @@
 CATALOG
   TITLE = "MiniCube"
-  DESCRIPTION = "Simplified test model for CUBE Voyager"
+  DESCRIPTION = "Minimal Highway Assignment Test Model"
 
-  ;--------------------------------------------------
-  ; Define the single run for this test model
-  ;--------------------------------------------------
-  RUNDEF "Highway Assignment"
-    SCRIPT = "SCRIPTS\assign.s"
-    WORKDIR = "."
-  ENDRUNDEF
+  GROUP "MiniCube Tests"
+    TITLE = "MiniCube Test Group"
+    DESCRIPTION = "Simple all-or-nothing highway assignment"
+
+    RUNGROUP "Highway Models"
+      TITLE = "Highway Assignment Steps"
+
+      RUNDEF "Test Assignment"
+        TITLE = "MiniCube Highway Test"
+        DESCRIPTION = "A simple AON highway assignment for MiniCube"
+
+        SCRIPT = "SCRIPTS\minicube_assign.s"
+        WORKDIR = "."
+      ENDRUNDEF
+
+    ENDRUNGROUP
+  ENDGROUP
 
 ENDCATALOG
