@@ -1,0 +1,13 @@
+CATALOG
+  TITLE = "MiniCube"
+  DESCRIPTION = "Simplified test model for CUBE Voyager"
+
+  ;--------------------------------------------------
+  ; Define the single run for this test model
+  ;--------------------------------------------------
+  RUNDEF "Highway Assignment"
+    SCRIPT = "SCRIPTS\assign.s"
+    WORKDIR = "."
+  ENDRUNDEF
+
+ENDCATALOG
