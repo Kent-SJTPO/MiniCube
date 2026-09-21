@@ -1,0 +1,28 @@
+* MiniCube test matrix
+MATRIX
+  NAME = DEMAND
+  DESCRIPTION = "4x4 test demand matrix"
+
+  ZONES = 4
+
+  * Demand from zone 1
+  ROW 1
+    0 100 200 300
+  ENDROW
+
+  * Demand from zone 2
+  ROW 2
+    100 0 150 250
+  ENDROW
+
+  * Demand from zone 3
+  ROW 3
+    200 150 0 180
+  ENDROW
+
+  * Demand from zone 4
+  ROW 4
+    300 250 180 0
+  ENDROW
+
+ENDMATRIX
